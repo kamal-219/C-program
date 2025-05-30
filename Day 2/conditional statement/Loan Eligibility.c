@@ -20,15 +20,15 @@ int main() {
     if (age >= 21) {
         if (income >= 25000) {
             if (creditScore > 700) {
-                printf("Loan Approved ✅\n");
+                printf("Loan Approved \n");
             } else {
-                printf("Loan Denied ❌: Credit score must be above 700.\n");
+                printf("Loan Denied : Credit score must be above 700.\n");
             }
         } else {
-            printf("Loan Denied ❌: Income must be at least ₹25,000.\n");
+            printf("Loan Denied : Income must be at least ₹25,000.\n");
         }
     } else {
-        printf("Loan Denied ❌: Age must be 21 or older.\n");
+        printf("Loan Denied : Age must be 21 or older.\n");
     }
 
     return 0;
