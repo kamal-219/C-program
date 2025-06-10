@@ -1,28 +1,28 @@
 //Use bit fields to pack multiple flags into a single variable.
 #include<stdio.h>
 struct electro{
-    unsigned int phone:1;
     unsigned int lap  :2;
-    unsigned int tab  :4;
 };
 int main(){
     struct electro A;
-    
-    A.phone=1;
-    A.lap=2;
-    A.tab=3;
-    int choice;
-    printf("enter your choice 1 or 2 or 3");
-    scanf("%d",&choice);
-    
-    if(choice==1){
-        printf("book choosed");
+        A.lap=1;
+
+    if(A.lap==0){
+        printf("laptop chosed");
     }
-    else if(choice==2){
-        printf("Laptop choosed");
+    else if(A.lap==1){
+        printf("Laptop booked");
     }
-    else{
-        printf("Tab booked");
+    else if(A.lap==2){
+          printf("Laptop Dispatched");
     }
-    return 0;
+    else if(A.lap==3){
+         printf("Laptop delivered");
+    }
+   else{
+       printf("Invalid ");
+   }
+   
+   return 0;
 }
+   
