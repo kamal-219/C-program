@@ -22,7 +22,7 @@ int main() {
         scanf("%d", ptr + i); 
     }
 
-    printf("You entered:\n");
+    printf("\n");
     for(i = 0; i < n; i++) {
         printf("%d ", *(ptr + i)); 
     }
