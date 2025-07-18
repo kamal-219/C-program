@@ -1,0 +1,27 @@
+// Rotate a 2D array by k positions to the right using pointers.
+#include<stdio.h>
+int main(){
+    int a[2][2]={{5,6},{7,8}};
+    int i,j,k,b[2][2];
+    for (i=0;i<2;i++){
+        for(j=0;j<2;j++){
+            printf("%d   ",a[i][j]);
+        }
+    printf("\n");
+    }
+    printf("position= ");scanf("%d",&k);
+    printf("------------------\n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+            b[j][k-i]=a[i][j];
+        }
+    }
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+           printf("%d  ",b[i][j]);
+           }
+           printf("\n");
+    }
+    
+    return 0;
+}
